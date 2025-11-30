@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Citas - DavanteDent</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="cabecera">
+        <img src="img/logo.png" alt="Logo DavanteDent" class="logo_cita">
+    </header>
+
+    <main class="contenedor-listado">
+
+        <h2 class="titulo-listado">Agenda de Citas</h2>
+
+        <table class="tabla-citas">
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>Fecha</th>
+                    <th>Paciente</th>
+                    <th>DNI</th>
+                    <th>Teléfono</th>
+                    <th>F.Nacimiento</th>
+                    <th>Observaciones</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabla-body">
+                <!-- (esto se rellena desde el JS y si no hay citas aparece "dato vacío") -->
+                <tr class="fila-vacia">
+                    <td colspan="8">Dato vacío</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="fila-botones">
+            <a href="index.html" class="boton-menu boton-form">Volver</a>
+        </div>
+
+    </main>
+
+    <footer class="pie">
+        <p>© Clínica DavanteDent — Gestor de Citas</p>
+    </footer>
+
+    <script src="/js/app.js" defer></script>
+
+</body>
+</html>
